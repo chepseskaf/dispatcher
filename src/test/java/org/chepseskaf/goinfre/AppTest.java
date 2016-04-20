@@ -49,7 +49,7 @@ public class AppTest
         executorService.execute(producer);
         executorService.execute(consumer);
         try {
-            barrier.await(60, TimeUnit.SECONDS);
+            barrier.await(20, TimeUnit.SECONDS);
             executorService.shutdown();
         } catch (InterruptedException e) {
             fail("PRODUCER and CONSUMER are still working");

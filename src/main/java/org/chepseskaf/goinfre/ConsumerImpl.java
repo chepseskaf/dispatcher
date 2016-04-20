@@ -25,7 +25,7 @@ public class ConsumerImpl implements Consumer {
              message = drop.take()) {
             System.out.format("MESSAGE RECEIVED: %s%n", message);
             try {
-                Thread.sleep(random.nextInt(5000));
+                Thread.sleep(random.nextInt(100));
             } catch (InterruptedException e) {
                 // nothing to do
             }

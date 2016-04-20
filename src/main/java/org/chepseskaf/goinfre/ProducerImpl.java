@@ -31,7 +31,7 @@ public class ProducerImpl implements Producer {
             drop.put(message);
             System.out.format("MESSAGE SEND: %s%n", message);
             try {
-                Thread.sleep(random.nextInt(5000));
+                Thread.sleep(random.nextInt(100));
             } catch (InterruptedException e) {
                 // nothing to do
             }
